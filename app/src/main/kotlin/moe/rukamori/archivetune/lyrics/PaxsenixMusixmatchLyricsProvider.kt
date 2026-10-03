@@ -9,7 +9,7 @@ package moe.rukamori.archivetune.lyrics
 
 import android.content.Context
 import moe.rukamori.archivetune.constants.EnablePaxsenixMusixmatchLyricsKey
-import moe.rukamori.archivetune.paxsenix.PaxsenixLyrics
+import moe.rukamori.archivetune.musixmatch.MusixmatchLyrics
 import moe.rukamori.archivetune.utils.dataStore
 import moe.rukamori.archivetune.utils.get
 
@@ -24,7 +24,7 @@ object PaxsenixMusixmatchLyricsProvider : LyricsProvider {
         artist: String,
         album: String?,
         duration: Int,
-    ): Result<String> = PaxsenixLyrics.getMusixmatchLyrics(title, artist, duration)
+    ): Result<String> = MusixmatchLyrics.getLyrics(title, artist, duration)
 
     override suspend fun getAllLyrics(
         id: String,

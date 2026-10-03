@@ -392,6 +392,7 @@ dependencies {
     implementation(project(":lyrics:kugou"))
     implementation(project(":lyrics:lrclib"))
     implementation(project(":lyrics:simpmusic"))
+    implementation(project(":lyrics:musixmatch"))
     implementation(project(":lyrics:paxsenix"))
     implementation(project(":lyrics:betterlyrics"))
     implementation(project(":lyrics:unison"))
